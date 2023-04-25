@@ -93,7 +93,7 @@ main > div > div.head > input {
 
 main > div > div.head > button {
     margin-left: 3%;
-    width: 12%;
+    width: 11%;
     background-color: rgb(138, 43, 226);
     color: white;
     font-size: xx-large;
@@ -133,7 +133,7 @@ main > div > ul > div > li {
     padding-bottom: 3%;
     margin-top: 2%;
     margin-left: -1.5%;
-    width: 75%;
+    width: 74.5%;
     background-color: whitesmoke;
 
     border-top-left-radius: 3px;
@@ -146,16 +146,18 @@ main > div > ul > div > li {
 
     user-select: none;
 }
-main > div > ul > div > li.showFully {
+.showFully {
     overflow: visible;
     text-overflow: clip;
     white-space: normal;
+    word-wrap: break-word;
 }
 
 main > div > ul > div > li:hover {
     overflow: visible;
     text-overflow: clip;
     white-space: normal;
+    word-wrap: break-word;
 }
 
 
@@ -172,11 +174,13 @@ main > div > ul > div > li:active {
 
     margin-top: 2%;
     width: 12%;
-    /* color: white; */
     border: none;
     border-radius: 0px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+
+    background-color: rgb(235, 226, 223);
+
 }
 
 .unchecked:hover {
