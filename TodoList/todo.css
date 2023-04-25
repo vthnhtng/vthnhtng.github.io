@@ -1,0 +1,247 @@
+/* page style */
+body {
+    background: linear-gradient(to left, rgb(96, 202, 213), rgb(84, 164, 222));
+    font: 1em sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+header > h1 {
+    font-size: 3em;
+    margin: 0;
+    text-indent: 3%;
+    background-color: beige;
+    
+}
+
+header > ul {
+    display: flex;
+    justify-content: space-around;
+
+    border: solid 1px white;
+    background-color: whitesmoke;
+    height: 50px;
+
+    font-size: 1.2em;
+
+    margin-top: 1px;
+}
+
+header > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5em;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+}
+
+.container {
+    width: 380px;
+    margin: 0 auto;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    padding-top: 5%;
+    margin-left: 9%;
+    font-size: x-large;
+}
+
+/* head style */
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div > div.head > input {
+    height: 2rem;
+    width: 65%;
+
+    text-indent: 5%;
+    outline: none;
+    border-width: 1px;
+    border-radius: 3px;
+
+    padding: 2px;
+    font-size: large;
+
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+  }
+  
+
+main > div > div.head > button {
+    margin-left: 3%;
+    width: 12%;
+    background-color: rgb(138, 43, 226);
+    color: white;
+    font-size: xx-large;
+
+    border: none;
+    border-radius: 3px;
+
+    transition: transform 0.1s;
+
+}
+
+main > div > div.head > button:hover {
+    background-color: rgb(149, 49, 243);
+    cursor: pointer;
+}
+
+main > div > div.head > button:active {
+    transform: scale(0.9);
+}
+
+/* list style */
+main > div > ul {
+    margin-top: 5%;
+
+}
+
+.task {
+    display: flex;
+    cursor: pointer;
+
+}
+
+main > div > ul > div > li {
+    list-style-type: none;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: -1.5%;
+    width: 75%;
+    background-color: whitesmoke;
+
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: large;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    user-select: none;
+}
+main > div > ul > div > li.showFully {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+
+main > div > ul > div > li:hover {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+
+
+main > div > ul > div > li:active {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+
+/* delete button */
+.unchecked {
+    background-color: whitesmoke;
+    margin-left: 0%;
+
+    margin-top: 2%;
+    width: 12%;
+    /* color: white; */
+    border: none;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.unchecked:hover {
+    background-color: rgb(220, 133, 133);
+}
+
+.icon-tick {
+    content: url("tick.png");
+    width: 100%;
+}
+
+.checked {
+    background-color: rgb(238, 13, 13);
+    margin-left: 0%;
+    margin-top: 2%;
+    width: 12%;
+    border: none;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.checked:hover {
+    background-color: rgb(240, 95, 95);
+}
+
+
+/* foot style */
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 11%;
+    padding-bottom: 2%;
+}
+
+span {
+    font-size: medium;
+    margin-right: 7%;
+    margin-bottom: 5%;
+}
+
+div.foot button {
+    font-size: medium;
+    width: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+
+    margin-left: 3%;
+    background-color: rgb(138, 43, 226);
+    color: white;
+
+    border-radius: 3px;
+    border: none;
+    transition: transform 0.1s;
+}
+
+div.foot > button:hover {
+    background-color: rgb(149, 49, 243);
+    cursor: pointer;
+}
+
+div.foot > button:active {
+    transform: scale(0.9);
+}
